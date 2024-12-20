@@ -2,9 +2,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
 		<meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}" />
-		{{ .Hugo.Generator }}
+		{{ hugo.Generator }}
 		<title>{{ .Site.Title }}</title>
-		
+
 		{{ "<!-- Favicon-->" | safeHTML }}
 		<link rel="icon" type="image/x-icon" href="img/{{ with .Site.Params.head.icon }}{{ . }}{{ else }}favicon.ico{{ end }}" />
 		{{ "<!-- Font Awesome icons (free version)-->" | safeHTML }}
